@@ -294,3 +294,10 @@ set -g mode-keys vi
 
 # move status line to top
 #set -g status-position top
+#-- tpm and 3rd party plugins----------------------------------------------------
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'jonmosco/kube-tmux'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run -b '~/.tmux/plugins/tpm/tpm'
