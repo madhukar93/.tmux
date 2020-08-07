@@ -315,3 +315,6 @@ set -g focus-events on
 set -g @resurrect-strategy-nvim 'session'
 set -g @resurrect-capture-pane-contents 'on'
 set -g @continuum-restore 'on'
+# tmux navigator rebinds C-l, now do this with <prefix>c-l
+# TODO - figure out some keybind because I use this to switch windows
+bind C-c send-keys 'C-l'
